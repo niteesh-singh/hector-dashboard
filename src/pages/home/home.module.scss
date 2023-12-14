@@ -1,0 +1,13 @@
+.mainPage {
+    display: flex;
+    background-color: #e2ecf9b7;
+}
+.pageWrapper {
+    width: 100%;
+
+    .customTab {
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}
