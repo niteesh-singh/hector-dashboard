@@ -4,6 +4,9 @@ import Select from "components/select/Select";
 import Header from "components/layout/header/Header";
 import CustomTab from 'components/customTab/CustomTab';
 import CustomDatePicker from 'components/CustomDatePicker/CustomDatePicker';
+import Chart from 'components/sovTrending/SOVTrending';
+import VariablePie from 'components/variablePie/VariablePie';
+import SOVTrending from 'components/sovTrending/SOVTrending';
 
 import styles from "./home.module.scss";
 
@@ -27,11 +30,27 @@ export default function Home() {
                     <Header />
                     {/* Add your main content here */}
                     <div className="container-fluid">
-                        <div className={styles.customTab}>
+                        <div className={`${styles.customTab}`}>
                             <CustomTab data={tabData} />
                             <CustomDatePicker />
                         </div>
-                        <Select />
+                        
+                        <div className={styles.selectBox}>
+                            <div className={styles.item}>
+                                <Select />
+                            </div>
+                            <Select />
+                        </div>
+                        <div className='row'>
+                            <SOVTrending />
+                        </div>
+                        <div className='row mt-4'>
+                            <div className='col-sm col-md-4 col-lg-4'>
+                                <VariablePie />
+                            </div>
+                            <div className='col-sm col-md-8 col-lg-8'></div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>

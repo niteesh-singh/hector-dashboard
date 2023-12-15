@@ -1,9 +1,16 @@
 import { useState } from "react";
-// import Calendar
+import DateRangePicker from "@wojtekmaj/react-daterange-picker";
 
 export default function CustomDatePicker() {
     const [startDate, setStartDate] = useState(new Date());
+    const [endDate, setEndDate] = useState(new Date());
+
+    const handleChange = (event) => {
+        console.log('event>>', event);
+        
+    }
+
     return(
-        <h1>kashfadjsk</h1>
+        <DateRangePicker value={startDate} onChange={handleChange} />
     )
 }
