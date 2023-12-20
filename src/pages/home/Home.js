@@ -4,9 +4,9 @@ import Select from "components/select/Select";
 import Header from "components/layout/header/Header";
 import CustomTab from 'components/customTab/CustomTab';
 import CustomDatePicker from 'components/CustomDatePicker/CustomDatePicker';
-import Chart from 'components/sovTrending/SOVTrending';
 import VariablePie from 'components/variablePie/VariablePie';
 import SOVTrending from 'components/sovTrending/SOVTrending';
+import ProductShare from 'components/productShare/ProductShare';
 
 import styles from "./home.module.scss";
 
@@ -48,7 +48,9 @@ export default function Home() {
                             <div className='col-sm col-md-4 col-lg-4'>
                                 <VariablePie />
                             </div>
-                            <div className='col-sm col-md-8 col-lg-8'></div>
+                            <div className='col-sm col-md-8 col-lg-8'>
+                                <ProductShare />
+                            </div>
                             
                         </div>
                     </div>

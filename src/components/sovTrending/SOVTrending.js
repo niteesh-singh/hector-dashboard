@@ -17,9 +17,12 @@ const options = {
 
 export default function SOVTrending() {
     return(
+      <>
+        <h2>SOV Trending Chart</h2>
         <HighchartsReact
             highcharts={Highcharts}
             options={options}
         />
+      </>
     );
 }
